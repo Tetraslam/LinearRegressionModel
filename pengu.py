@@ -28,14 +28,17 @@ theta = np.zeros([2, 1])
 theta, J = gradient(x, y, theta, m)
 
 
+plt.figure(num='Fancy Words Used VS Distance Thrown')
 
-plt.plot(X, y, 'rx')
+plt.plot(X, y, 'c', marker=",")
 
 plt.plot(X, x @ theta, '-')
 
 plt.ylabel("Distance Thrown")
 
 plt.xlabel('Fancy Words Used')
+
+
 
 plt.title('Fancy Words VS Distance Thrown')
 
